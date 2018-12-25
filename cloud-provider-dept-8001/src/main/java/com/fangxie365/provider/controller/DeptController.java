@@ -16,7 +16,7 @@ public class DeptController {
     public Dept get(@PathVariable("id") Long id)
     {
         if(id!=11){
-
+            System.out.println(11);
         }
         return deptService.findById(id);
     }
