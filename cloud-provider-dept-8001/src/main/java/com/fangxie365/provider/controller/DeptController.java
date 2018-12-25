@@ -15,6 +15,9 @@ public class DeptController {
     @GetMapping(value = "/dept/get/{id}")
     public Dept get(@PathVariable("id") Long id)
     {
+        if(id!=11){
+
+        }
         return deptService.findById(id);
     }
 }
